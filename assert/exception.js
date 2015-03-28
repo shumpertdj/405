@@ -12,10 +12,10 @@ function divide(x, y){
 	}
 	else
 		assert.ok(y != 0, 'Y is not equal to 0! YES!'); 
-	return (x / y);
+	return (x/y);
 }
 
-divide(2,4);
+divide(1,4);
 assert.throws(imbad);
 
 console.log("All tests passed.");
