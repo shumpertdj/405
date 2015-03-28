@@ -4,6 +4,7 @@ var http = require('http');
 var domain = require('domain');
 var message = require('./message');
 var st = require('st');
+var db require('/.db');
 var mount;
 
 
@@ -24,7 +25,7 @@ function replyNotFound(res) {
 function handleRequest(req, res) {
   console.log('Handling request for ' + req.url);
   if (req.url === '/message'){
-    message.handle(req, res);
+    db.handle(req, res);
   }else if(req.url === '/'){
     redirectIndex(res);
   }else{
