@@ -1,4 +1,5 @@
-//javascript to create html of random colored lists
+//Darnell Shumpert
+//Javascript to create html page that makes 100 random colors and shows hex value for the colors
 function randomcolorlist() { 
 	console.log('<html><body><ul>');
 	for (var i = 0; i < 100; i++){
